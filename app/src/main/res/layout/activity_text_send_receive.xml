@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/labelTextToCast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_text_to_cast"
+        />
+
+    <EditText
+        android:id="@+id/editTextToCast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/labelReceivedText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_received_text"
+        />
+
+    <TextView
+        android:id="@+id/textReceivedText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:id="@+id/buttonPerformAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/perform_action"
+        />
+
+    <Button
+        android:id="@+id/buttonReturnToMainFromTextSendReceive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/return_to_main"
+        />
+</LinearLayout>
