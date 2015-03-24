@@ -15,19 +15,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <TextView
-        android:id="@+id/labelReceivedText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/label_received_text"
-        />
-
-    <TextView
-        android:id="@+id/textReceivedText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        />
-
     <Button
         android:id="@+id/buttonPerformAction"
         android:layout_width="match_parent"
@@ -36,9 +23,15 @@
         />
 
     <Button
-        android:id="@+id/buttonReturnToMainFromTextSendReceive"
+        android:id="@+id/buttonPreloadedText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/return_to_main"
+        android:text="Preloaded text"
+        />
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear"
         />
 </LinearLayout>

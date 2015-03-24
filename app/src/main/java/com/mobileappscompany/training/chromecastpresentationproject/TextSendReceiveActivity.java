@@ -8,14 +8,17 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 
 public class TextSendReceiveActivity extends ActionBarActivity {
 
     private Context context;
+    private EditText editTextToCast;
     private Button performAction;
-    private Button returnToMain;
+    private Button buttonPreloadedText;
+    private Button buttonClear;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,23 +27,33 @@ public class TextSendReceiveActivity extends ActionBarActivity {
 
         context = this;
 
-        performAction = (Button)findViewById(R.id.buttonPerformAction);
-        returnToMain  = (Button)findViewById(R.id.buttonReturnToMainFromTextSendReceive);
+        editTextToCast       = (EditText)findViewById(R.id.editTextToCast);
+        performAction        = (Button)findViewById(R.id.buttonPerformAction);
+        buttonPreloadedText  = (Button)findViewById(R.id.buttonPreloadedText);
+        buttonClear          = (Button)findViewById(R.id.buttonClear);
 
         performAction.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Constants.showNotYetImplementedToast(context);
-            }
-        });
-
-        returnToMain.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
                 Intent intent = new Intent();
+                intent.putExtra(Constants.TEXT_TO_SEND_TAG,editTextToCast.getText().toString());
                 setResult(Constants.TEXT_SEND_RECEIVE_RESULT_CODE,intent);
                 finish();
             }
+        });
+
+        buttonPreloadedText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                editTextToCast.setText(getString(R.string.preloaded_text));
+            }
+        });
+
+        buttonClear.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                editTextToCast.setText("");
+             }
         });
     }
 

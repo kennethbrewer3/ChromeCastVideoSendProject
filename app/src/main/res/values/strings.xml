@@ -2,7 +2,6 @@
     <string name="app_name">ChromeCastPresentationProject</string>
 
     <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
 
     <string name="string_to_text_send_receive_activity">Text Send/Receive</string>
     <string name="string_to_video_activity">Cast a Video</string>
@@ -20,5 +19,13 @@
     <string name="not_yet_implemented">Not yet implemented.</string>
     <string name="title_activity_cast_mp3">CastMP3Activity</string>
 
-    <string name="media_route_menu_title">Media Route</string>
+    <string name="preloaded_text">\"Duo des fleurs\" from L\u00E9o Delibes\' opera \"Lakm\u00E9\"</string>
+
+    <string name="app_id">794B7BBF</string>
+    <string name="namespace">urn:x-cast:com.google.cast.sample.helloworld</string>
+    <string name="title">Kenneth Brewer\'s Chrome Cast Presentation</string>
+    <string name="message_to_cast">Message to Cast&#8230;</string>
+    <string name="action_settings">Settings</string>
+    <string name="media_route_menu_title">Play on&#8230;</string>
+    <string name="instructions">Talk to me</string>
 </resources>
