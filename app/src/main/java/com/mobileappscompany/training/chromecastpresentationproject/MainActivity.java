@@ -66,11 +66,19 @@ public class MainActivity extends ActionBarActivity {
 
         // When the user clicks on the button, use Android voice recognition to
         // get text
-        Button voiceButton = (Button) findViewById(R.id.voiceButton);
-        voiceButton.setOnClickListener(new OnClickListener() {
+        Button buttonVoiceSend = (Button) findViewById(R.id.buttonVoiceSend);
+        buttonVoiceSend.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
                 startVoiceRecognitionActivity();
+            }
+        });
+
+        Button buttonPreloadedTextSend = (Button) findViewById(R.id.buttonPreloadedTextSend);
+        buttonPreloadedTextSend.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sendMessage(getString(R.string.preloaded_text));
             }
         });
 

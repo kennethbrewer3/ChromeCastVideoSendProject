@@ -10,10 +10,17 @@
     tools:context=".MainActivity" >
 
     <Button
-        android:id="@+id/voiceButton"
+        android:id="@+id/buttonVoiceSend"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         android:background="@drawable/voice_button" />
+    <Button
+        android:id="@+id/buttonPreloadedTextSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonVoiceSend"
+        android:text="@string/button_preloaded_text"
+        />
 </RelativeLayout>

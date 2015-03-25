@@ -26,18 +26,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".TextSendReceiveActivity"
-            android:label="@string/title_activity_text_send_receive" >
-        </activity>
-        <activity
-            android:name=".CastVideoActivity"
-            android:label="@string/title_activity_cast_video" >
-        </activity>
-        <activity
-            android:name=".CastMP3Activity"
-            android:label="@string/title_activity_cast_mp3" >
-        </activity>
-    </application>
+     </application>
 
 </manifest>

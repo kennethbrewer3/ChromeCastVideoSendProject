@@ -1,24 +1,9 @@
 <resources>
     <string name="app_name">ChromeCastPresentationProject</string>
-
-    <string name="hello_world">Hello world!</string>
-
-    <string name="string_to_text_send_receive_activity">Text Send/Receive</string>
-    <string name="string_to_video_activity">Cast a Video</string>
-    <string name="string_to_cast_mp3_activity">Cast MP3</string>
-    <string name="label_text_to_cast">Text to cast:</string>
-    <string name="label_received_text">Received text:</string>
-    <string name="perform_action">Perform Action</string>
-    <string name="title_activity_text_send_receive">TextSendReceiveActivity</string>
-    <string name="return_to_main">Return to Main</string>
-    <string name="title_activity_cast_video">Cast Video Activity</string>
-    <string name="cast_video">Cast Video</string>
-    <string name="cast_mp3">Cast MP3</string>
-    <string name="string_to_exit_app">Exit</string>
-
     <string name="not_yet_implemented">Not yet implemented.</string>
-    <string name="title_activity_cast_mp3">CastMP3Activity</string>
 
+
+    <string name="button_preloaded_text">Preloaded text</string>
     <string name="preloaded_text">\"Duo des fleurs\" from L\u00E9o Delibes\' opera \"Lakm\u00E9\"</string>
 
     <string name="app_id">794B7BBF</string>
